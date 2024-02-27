@@ -2,11 +2,13 @@
 const Employee = require("./Employee")
 
 class Intern extends Employee {
-    constructor (name, id, email, school) {
+    constructor(name, id, email, school) {
+
+        super(name, id, email)
         if (typeof school !== 'string') {
             throw new Error('Invalid input type for school. Expected: string');
-          }
-        super(name, id, email)
+        }
+        
         this.school = school;
     }
 

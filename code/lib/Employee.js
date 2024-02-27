@@ -1,10 +1,15 @@
 // TODO: Write code to define and export the Employee class
 class Employee {
     constructor(name, id, email) {
-        
-            if (typeof name !== 'string' || typeof id !== 'number' || typeof email !== 'string') {
-              throw new Error('Invalid input type. Expected: (string, number, string)');
-            }
+
+        if (typeof name !== 'string' || typeof email !== 'string') {
+            throw new Error('Invalid input type. Expected: String');
+        }
+
+        if (typeof id !== 'number') {
+            throw new Error('Invalid input type for office number. Expected: number');
+          }
+
         this.name = name;
         this.id = id;
         this.email = email;

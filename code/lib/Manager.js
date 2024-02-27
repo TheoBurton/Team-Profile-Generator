@@ -3,12 +3,21 @@ const Employee = require("./Employee")
 
 class Manager extends Employee {
     constructor (name, id, email, officeNumber) {
+        
+        super(name, id, email)
         if (typeof officeNumber !== 'number') {
             throw new Error('Invalid input type for office number. Expected: number');
-        }
-        super(name, id, email)
+          }
+          
+          
         this.officeNumber = officeNumber;
     }
+
+
+    getOfficeNumber() {
+        return this.officeNumber;
+      }
+
 
     getRole() {
         return 'Manager';

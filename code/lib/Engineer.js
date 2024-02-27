@@ -2,16 +2,18 @@
 const Employee = require("./Employee")
 
 class Engineer extends Employee {
-    constructor (name, id, email, gitHub) {
-        if (typeof github !== 'string') {
-            throw new Error('Invalid input type for GitHub username. Expected: string');
-          }
+    constructor(name, id, email, gitHub) {
+
         super(name, id, email)
-        this.github = gitHub;
+        if (typeof gitHub !== 'string') {
+            throw new Error('Invalid input type for GitHub username. Expected: string');
+        }
+        
+        this.gitHub = gitHub;
     }
 
-    getGitHub(){
-        return this.github;
+    getGitHub() {
+        return this.gitHub;
     }
 
 
