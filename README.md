@@ -26,7 +26,7 @@ After running the application you will be prompted with questions related to eac
 Github Repo:
 https://github.com/TheoBurton/Team-Profile-Generator
 
-![Screenshot of generated webpage](../assets/Screenshot.png)
+![Screenshot of generated webpage](/assets/Screenshot.png)
 
 Watch a video demonstration here:
 https://app.screencastify.com/v3/watch/xFQxeLCCTgaJ4lqKaoXq
